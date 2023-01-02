@@ -47,7 +47,7 @@ def main():
                 running = False
         
         # Update particles
-        for p in particles:
+        for p in particles[:]:
             if bool(p.update()):
                 # firework explosion
                 if isinstance(p, Firework):
